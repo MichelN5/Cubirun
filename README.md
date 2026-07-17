@@ -4,7 +4,7 @@ A simple 3D obstacle-running game built with **Unity** and **C#**.
 
 The player controls a blue cube moving across a platform and must avoid the obstacles placed along the course. The score increases as the run continues, making the objective simple: stay on the platform, avoid collisions, and achieve the highest score possible.
 
-![Cubirun gameplay](docs/cubirun-gameplay.jpg)
+![Cubirun gameplay](docs/cubirun-gameplay.png)
 
 ## Gameplay
 
@@ -25,8 +25,7 @@ The player controls a blue cube moving across a platform and must avoid the obst
 
 ### Requirements
 
-- Unity Hub
-- A compatible Unity Editor version
+- Windows
 
 ### Run the project
 
@@ -37,25 +36,21 @@ git clone https://github.com/MichelN5/Cubirun.git
 cd Cubirun
 ```
 
-2. Open Unity Hub.
-3. Select **Add project from disk**.
-4. Choose the cloned project folder.
-5. Open the main game scene.
-6. Press the **Play** button in the Unity Editor.
+2. Open the `Cubirun` folder.
+3. Run `Cubirun.exe`.
 
-Unity Hub should suggest installing the required editor version when it reads the project configuration.
+Keep `Cubirun.exe` beside `Cubirun_Data`, `UnityPlayer.dll`, `UnityCrashHandler32.exe`, and `MonoBleedingEdge` so the Unity build can find its runtime files.
 
 ## Project Structure
 
-A Unity project normally keeps its source-controlled files in these directories:
+This repository contains a Windows Unity build:
 
 ```text
-Assets/          Game scenes, scripts, materials, prefabs, and other assets
-Packages/        Unity package configuration
-ProjectSettings/ Unity project and editor settings
+Cubirun/          Built game executable and Unity runtime files
+docs/             README images and supporting project assets
 ```
 
-Generated Unity directories such as `Library`, `Temp`, `Logs`, `Build`, and `UserSettings` are excluded from version control.
+The Unity source project is not included in this repository.
 
 ## Project Scope
 
